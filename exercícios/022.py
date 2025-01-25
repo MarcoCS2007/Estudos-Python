@@ -1,6 +1,0 @@
-frase = str (input ('Qual o seu nome')).strip()
-print (f'Seu nome maiusculo é {frase.upper()}')
-print (f'Seu nome minusculo é {frase.lower()}')
-print (f'Seu nome tem {len(frase)-frase.count(' ')}')
-print (f'Seu primeiro nome é {frase.split()[0]}')
-print (f'seu primeiro nome possue {len(frase.split()[0])-frase.count(' ')}')
