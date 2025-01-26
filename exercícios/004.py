@@ -1,6 +1,0 @@
-m = input ('Digite algo')
-print ('Valor digitado é:', type(m))
-print ('Valor digitado é numérico?', m.isnumeric())
-print ('Valor digitado é alfabeto?', m.isalpha())
-print ('Valor digitado é alfanumérocp?', m.isalnum())
-print ('Valor digitado é identificável?', m.isidentifier())
