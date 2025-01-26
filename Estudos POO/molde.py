@@ -76,3 +76,29 @@ class pessoa:
 #005 - Crie uma classe chamada Forma com o seguinte atributo: cor. Crie um método chamado get_area que retorna a área da forma. Crie subclasses de Forma para diferentes formas (por exemplo, Circulo, Retangulo, Triangulo) e sobrescreva o método get_area em cada subclasse para calcular a área da forma específica.
 
 ...
+
+#006 - Utilizando a classe Pessoa do exercício #004, adicione um metodo de classe que leia da data de nascimento ao inves da idade e retorne ao objeto principal a idade, baseando-se no ano atual.
+
+class pessoa_update:
+    from datetime import datetime
+
+    ano_atual = ano_atual = datetime.now().year
+
+    def __init__(self, primeiro_nome, ultimo_nome, idade):
+        self.primeiro_nome = primeiro_nome
+        self.sobrenome = ultimo_nome
+        self.idade = idade
+
+    def nome_completo(self):
+        return f'{self.primeiro_nome} {self.sobrenome}'
+    
+    def is_adult(self):
+        if self.idade >= 18:
+            return True
+        else:
+            return False
+
+    @classmethod
+    def get_ano_nascimento(cls, primeiro_nome, ultimo_nome, ano_nascimento):
+        idade = cls.ano_atual - ano_nascimento
+        return cls(primeiro_nome, ultimo_nome, idade)
