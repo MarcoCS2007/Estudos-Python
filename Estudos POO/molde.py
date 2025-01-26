@@ -1,4 +1,4 @@
-#001 - Crie uma classe chamada Carro com os seguintes atributos: marca, modelo, ano e cor. Crie um método chamado start que imprime a mensagem "O carro está ligando." Crie um método chamado stop que imprime a mensagem "O carro está desligando." Crie um objeto da classe Carro e chame os métodos start e stop.
+#001 - Questão elaborada por Gemini - Crie uma classe chamada Carro com os seguintes atributos: marca, modelo, ano e cor. Crie um método chamado start que imprime a mensagem "O carro está ligando." Crie um método chamado stop que imprime a mensagem "O carro está desligando." Crie um objeto da classe Carro e chame os métodos start e stop.
 
 class Carro:
     def __init__(self, marca, modelo, ano, cor):
@@ -13,7 +13,7 @@ class Carro:
     def start(self):
         print(f'O {self.marca} {self.modelo} está ligando')
 
-#002 - Crie uma classe chamada Animal com os seguintes atributos: nome, espécie e idade. Crie um método chamado make_sound que imprime o som que o animal faz. Crie um método chamado eat que imprime a mensagem "O animal está comendo." Crie objetos da classe Animal para diferentes animais (por exemplo, cachorro, gato, pássaro) e chame os métodos make_sound e eat para cada objeto.
+#002 - Questão elaborada por Gemini - Crie uma classe chamada Animal com os seguintes atributos: nome, espécie e idade. Crie um método chamado make_sound que imprime o som que o animal faz. Crie um método chamado eat que imprime a mensagem "O animal está comendo." Crie objetos da classe Animal para diferentes animais (por exemplo, cachorro, gato, pássaro) e chame os métodos make_sound e eat para cada objeto.
 
 class Animal:
 
@@ -38,7 +38,7 @@ class Animal:
         else:
             return 'Som desconhecido'
         
-#003 - Crie uma classe chamada ContaBancaria com os seguintes atributos: numero_da_conta, saldo e proprietario. Crie um método chamado depositar que adiciona dinheiro ao saldo da conta. Crie um método chamado sacar que subtrai dinheiro do saldo da conta. Crie um objeto da classe ContaBancaria e chame os métodos depositar e sacar.
+#003 - Questão elaborada por Gemini - Crie uma classe chamada ContaBancaria com os seguintes atributos: numero_da_conta, saldo e proprietario. Crie um método chamado depositar que adiciona dinheiro ao saldo da conta. Crie um método chamado sacar que subtrai dinheiro do saldo da conta. Crie um objeto da classe ContaBancaria e chame os métodos depositar e sacar.
 
 class ContaBancaria:
     def __init__(self, numero_da_conta, saldo, propietario):
@@ -55,7 +55,7 @@ class ContaBancaria:
         else:
             print (f'Valor indisponivel no saldo!\nSaldo atual: {self.saldo}')
 
-#004 - Crie uma classe chamada Pessoa com os seguintes atributos: primeiro_nome, ultimo_nome e idade. Crie um método chamado nome_completo que retorna o nome completo da pessoa. Crie um método chamado is_adulto que retorna True se a pessoa tiver 18 anos ou mais, e False caso contrário. Crie um objeto da classe Pessoa e chame os métodos nome_completo e is_adulto.
+#004 - Questão elaborada por Gemini - Crie uma classe chamada Pessoa com os seguintes atributos: primeiro_nome, ultimo_nome e idade. Crie um método chamado nome_completo que retorna o nome completo da pessoa. Crie um método chamado is_adulto que retorna True se a pessoa tiver 18 anos ou mais, e False caso contrário. Crie um objeto da classe Pessoa e chame os métodos nome_completo e is_adulto.
 
 class pessoa:
 
@@ -73,11 +73,11 @@ class pessoa:
         else:
             return False
         
-#005 - Crie uma classe chamada Forma com o seguinte atributo: cor. Crie um método chamado get_area que retorna a área da forma. Crie subclasses de Forma para diferentes formas (por exemplo, Circulo, Retangulo, Triangulo) e sobrescreva o método get_area em cada subclasse para calcular a área da forma específica.
+#005 - Questão elaborada por Gemini - Crie uma classe chamada Forma com o seguinte atributo: cor. Crie um método chamado get_area que retorna a área da forma. Crie subclasses de Forma para diferentes formas (por exemplo, Circulo, Retangulo, Triangulo) e sobrescreva o método get_area em cada subclasse para calcular a área da forma específica.
 
 ...
 
-#006 - Utilizando a classe Pessoa do exercício #004, adicione um metodo de classe que leia da data de nascimento ao inves da idade e retorne ao objeto principal a idade, baseando-se no ano atual.
+#006 - Questão elaborada por Marco - Utilizando a classe Pessoa do exercício #004, adicione um metodo de classe que leia da data de nascimento ao inves da idade e retorne ao objeto principal a idade, baseando-se no ano atual.
 
 class pessoa_update:
     from datetime import datetime
