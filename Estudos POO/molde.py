@@ -80,6 +80,7 @@ class pessoa:
 #006 - Questão elaborada por Marco - Utilizando a classe Pessoa do exercício #004, adicione um metodo de classe que leia da data de nascimento ao inves da idade e retorne ao objeto principal a idade, baseando-se no ano atual.
 
 class pessoa_update:
+
     from datetime import datetime
 
     ano_atual = ano_atual = datetime.now().year
@@ -102,3 +103,37 @@ class pessoa_update:
     def get_ano_nascimento(cls, primeiro_nome, ultimo_nome, ano_nascimento):
         idade = cls.ano_atual - ano_nascimento
         return cls(primeiro_nome, ultimo_nome, idade)
+
+#007 - Questão elaborada por Marco - Utilizando a classe Pessoa do exercício #006, adicione um metodo etsático que gere um id para o objeto.
+
+class pessoa_update_2:
+
+    from datetime import datetime
+
+    ano_atual = ano_atual = datetime.now().year
+
+    def __init__(self, primeiro_nome, ultimo_nome, idade):
+        self.primeiro_nome = primeiro_nome
+        self.sobrenome = ultimo_nome
+        self.idade = idade
+
+    def nome_completo(self):
+        return f'{self.primeiro_nome} {self.sobrenome}'
+    
+    def is_adult(self):
+        if self.idade >= 18:
+            return True
+        else:
+            return False
+
+    @classmethod
+    def get_ano_nascimento(cls, primeiro_nome, ultimo_nome, ano_nascimento):
+        idade = cls.ano_atual - ano_nascimento
+        return cls(primeiro_nome, ultimo_nome, idade)
+    
+    @staticmethod
+    def gerar_id():
+        from random import randint
+
+        id = randint(10000, 99999)
+        return id
