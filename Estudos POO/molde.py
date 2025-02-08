@@ -137,3 +137,38 @@ class pessoa_update_2:
 
         id = randint(10000, 99999)
         return id
+    
+#008 - Questão elaborada por Marco - Crie uma classe chamada 'Produto', que receba os valores 'nome' e 'preco' e adicione um método que aplique um desconto percentual ao produto. configure para que o nome tenha a primeira letra maiuscula e o restante minuscula e para que o preço possa sempre ser lido como int ou float.
+
+class Produto:
+    def __init__(self, nome, preco):
+        self.nome = nome
+        self.preco = preco
+
+    @property
+    def nome(self):
+        return self._nome
+    
+    @nome.setter
+    def nome(self, nome):
+        self._nome = nome.strip().title()
+
+    @property
+    def preco(self):
+        return self._preco
+    
+    @preco.setter
+    def preco(self, preco):
+        if isinstance(preco, str):
+            preco = preco.replace(',', '.')
+            for caracter in preco:
+                if caracter not in '123456789.':
+                    preco = preco.replace(caracter, '')
+            if preco[0] == '.':
+                preco = preco.replace('.', '')
+        self._preco = float(preco)
+    
+    def desconto(self,percentual):
+        return self.preco - self.preco/100*percentual 
+    
+    
